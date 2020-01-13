@@ -8,7 +8,7 @@ trigger:
 
 pool:
   vmImage: '1MTEserver2019'
-- task: CmdLine@2
+ task: CmdLine@2
   inputs:
-    script: 'echo Xmti.Client.exe partialRestore -l -i d:test.txt --som 00:00:02;00 --eom 00:00:20;03 -o d:\Media1\MTE_2.5.5.1\name'
+    script: 'Xmti.Client.exe partialRestore -l -i d:test.txt --som 00:00:02;00 --eom 00:00:20;03 -o d:\Media1\MTE_2.5.5.1\name'
     workingDirectory: 'c:\build_agents\test_1\xmti\'
